@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafidz Khiari - Portofolio Profesional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#090d16'
+                        },
+                        professional: {
+                            DEFAULT: '#1e3a8a',
+                            light: '#3b82f6',
+                            dark: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-blue-600 selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="text-xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-blue-900 text-white flex items-center justify-center font-semibold text-sm">HK</span>
+                Hafidz Khiari Abdunatsir
+            </a>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#about" class="hover:text-blue-900 transition">Tentang Saya</a>
+                <a href="#skills" class="hover:text-blue-900 transition">Keahlian</a>
+                <a href="#experience" class="hover:text-blue-900 transition">Pengalaman</a>
+                <a href="#contact" class="hover:text-blue-900 transition">Kontak</a>
+            </nav>
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-blue-900 text-white text-sm font-medium hover:bg-blue-800 transition shadow-sm">Hubungi Saya</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-600 font-medium hover:text-blue-900">Tentang Saya</a>
+            <a href="#skills" class="block text-slate-600 font-medium hover:text-blue-900">Keahlian</a>
+            <a href="#experience" class="block text-slate-600 font-medium hover:text-blue-900">Pengalaman</a>
+            <a href="#contact" class="block text-slate-600 font-medium hover:text-blue-900">Kontak</a>
+        </div>
+    </header>
+
+    <section id="home" class="pt-32 pb-20 md:pt-44 md:pb-32 bg-gradient-to-b from-slate-100 to-white overflow-hidden relative">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-900 text-xs font-semibold tracking-wide uppercase">
+                    <i class="fa-solid fa-briefcase text-[10px]"></i> Management Professional
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+                    Halo, Saya <span class="text-blue-900">Hafidz Khiari Abdunatsir</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl leading-relaxed">
+                    Lulusan S1 Manajemen dengan konsentrasi Human Resource Management. Memiliki keahlian terpadu dalam pengelolaan operasional, administrasi profesional, serta digital editing.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#contact" class="px-6 py-3.5 rounded-xl bg-blue-900 text-white font-medium text-sm hover:bg-blue-800 transition shadow-lg shadow-blue-900/10 flex items-center gap-2">
+                        <span>Hubungi Saya</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#experience" class="px-6 py-3.5 rounded-xl bg-white border border-slate-300 text-slate-700 font-medium text-sm hover:bg-slate-50 transition shadow-sm">
+                        Lihat Pengalaman
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl bg-gradient-to-tr from-blue-900 to-slate-700 p-2 shadow-2xl">
+                    <div class="w-full h-full rounded-xl bg-slate-200 overflow-hidden relative flex items-center justify-center">
+                        <!-- Placeholder Professional Avatar -->
+                        <img src="https://placehold.co/400x400/0f172a/ffffff?text=Hafidz+Khiari" alt="Hafidz Khiari" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Floating badge -->
+                    <div class="absolute -bottom-4 -left-4 bg-white px-4 py-3 rounded-xl shadow-lg border border-slate-100 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-medium">Status</p>
+                            <p class="text-sm font-bold text-slate-800">Siap Berkontribusi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-blue-900 uppercase tracking-widest">Tentang Saya</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Profil & Latar Belakang Profesional</h3>
+                <p class="text-slate-600 text-sm">Mengenal lebih dekat perjalanan akademis dan kualifikasi profesional saya.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h4 class="text-xl font-bold text-slate-900">Dedikasi pada Manajemen, Operasional & Digital</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Saya adalah seorang profesional yang berfokus pada pengembangan sumber daya manusia, efisiensi operasional, serta ketelitian administrasi. Berbekal latar belakang pendidikan sarjana di bidang manajemen, saya terbiasa menghadapi tantangan bisnis secara strategis dan terstruktur.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Selain bidang manajerial dan administrasi, saya juga memiliki ketertarikan serta kemampuan mendalam di bidang digital editing dan pengelolaan konten visual untuk mendukung kebutuhan komunikasi perusahaan.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="block text-2xl font-bold text-blue-900">S1</span>
+                            <span class="text-xs text-slate-600 font-medium">Manajemen SDM</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                            <span class="block text-2xl font-bold text-blue-900">Multi</span>
+                            <span class="text-xs text-slate-600 font-medium">Disiplin Keahlian</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-blue-900 text-white flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900">Pendidikan S1 Manajemen</h5>
+                                <p class="text-xs text-slate-500">Konsentrasi Human Resource Management (HRM)</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 pt-2 border-t border-slate-200">
+                            Mempelajari manajemen organisasi, rekrutmen, pengembangan tenaga kerja, hubungan industrial, serta strategi perilaku keorganisasian.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-blue-900 text-white flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-slate-900">Operasional & Administrasi</h5>
+                                <p class="text-xs text-slate-500">Pengelolaan retail, transaksi, & pencatatan teliti</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 pt-2 border-t border-slate-200">
+                            Berpengalaman dalam manajemen operasional sehari-hari, penanganan transaksi keuangan, serta pelaporan administratif yang akurat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-blue-900 uppercase tracking-widest">Keahlian & Kompetensi</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Bidang Keahlian Utama</h3>
+                <p class="text-slate-600 text-sm">Kombinasi keterampilan manajerial, administratif, dan kreatif.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Skill 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition space-y-4">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center text-2xl font-bold">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Human Resources (HR)</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Manajemen sumber daya manusia, pengelolaan karyawan, pemahaman regulasi ketenagakerjaan, rekrutmen, serta pelatihan dan pengembangan pegawai.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2 border-t border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Manajemen Personalia</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Evaluasi Kinerja SDM</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Hubungan Industrial Dasar</li>
+                    </ul>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition space-y-4">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center text-2xl font-bold">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Administrasi & Transaksi</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Ketelitian tinggi dalam pencatatan data, pengelolaan administrasi kantor/usaha, serta pemrosesan transaksi keuangan secara akurat dan transparan.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2 border-t border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Pembukuan & Pelaporan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Pengelolaan Kas & Transaksi</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Pengarsipan Data Sistematis</li>
+                    </ul>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition space-y-4">
+                    <div class="w-14 h-14 rounded-xl bg-blue-50 text-blue-900 flex items-center justify-center text-2xl font-bold">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900">Digital Editing & Content</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Kemampuan dalam mengolah konten digital, penyuntingan grafis/video untuk keperluan promosi, serta manajemen media digital perusahaan.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-700 font-medium pt-2 border-t border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Photo & Video Editing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Desain Materi Promosi</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-900"></i> Manajemen Konten Visual</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs font-bold text-blue-900 uppercase tracking-widest">Riwayat Karir</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Pengalaman Karir</h3>
+                <p class="text-slate-600 text-sm">Rekam jejak pengalaman kerja dalam pengelolaan operasional, layanan, dan administrasi.</p>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-7 before:w-0.5 before:bg-slate-200">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative flex items-start gap-6 group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-900 text-white flex items-center justify-center text-lg font-bold shadow-md z-10 shrink-0">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="flex-1 bg-slate-50 border border-slate-200 p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h4 class="text-lg font-bold text-slate-900">Yellow Dental Care</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-900 rounded-full w-fit">Pengalaman Profesional</span>
+                        </div>
+                        <p class="text-sm font-medium text-slate-600">Pengelolaan Operasional & Administrasi</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Bertanggung jawab penuh atas kelancaran operasional harian, mengatur penjadwalan antara pelanggan dengan dokter, menangani proses pembayaran tunai maupun non tunai, mengelola kas, serta membuat laporan mingguan dan bulanan.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Manajemen Tim</span>
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Operasional</span>
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Administrasi Keuangan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative flex items-start gap-6 group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-900 text-white flex items-center justify-center text-lg font-bold shadow-md z-10 shrink-0">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <div class="flex-1 bg-slate-50 border border-slate-200 p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h4 class="text-lg font-bold text-slate-900">AlHadi Cell</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-900 rounded-full w-fit">Administrasi & Keuangan</span>
+                        </div>
+                        <p class="text-sm font-medium text-slate-600">Pengelolaan Data & Transaksi Perusahaan/Usaha</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Menangani pencatatan transaksi masuk dan keluar secara teliti, menyusun laporan keuangan harian/berkala, serta memelihara sistem administrasi yang terstruktur untuk mencegah selisih data.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Administrasi Perkantoran</span>
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Pencatatan Transaksi</span>
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Ketelitian Data</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative flex items-start gap-6 group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-900 text-white flex items-center justify-center text-lg font-bold shadow-md z-10 shrink-0">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </div>
+                    <div class="flex-1 bg-slate-50 border border-slate-200 p-6 rounded-2xl shadow-sm space-y-3">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                            <h4 class="text-lg font-bold text-slate-900">Junior Kaktus</h4>
+                            <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-900 rounded-full w-fit">Kreatif & Media</span>
+                        </div>
+                        <p class="text-sm font-medium text-slate-600">Staf Operasional</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Mengerjakan berbagai proyek seperti penyuntingan foto dan video untuk keperluan marketplace, media sosial, serta materi promosi yang mendukung citra profesional perusahaan, serta melakukan stok opname.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Kemampuan Teknis</span>
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Manajerial</span>
+                            <span class="px-2.5 py-1 bg-slate-200/70 text-slate-700 text-xs rounded-md font-medium">Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <div class="space-y-3">
+                        <h2 class="text-xs font-bold text-blue-400 uppercase tracking-widest">Hubungi Saya</h2>
+                        <h3 class="text-3xl font-bold tracking-tight">Mari Berkolaborasi atau Terhubung</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Saya terbuka untuk peluang karir di bidang Human Resources, Manajemen Operasional, Administrasi, maupun kolaborasi proyek kreatif profesional. Silakan hubungi saya melalui formulir atau kontak di bawah ini.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-4">
+                        <a href="mailto:hafidkhiari18@email.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 transition">
+                            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Email</p>
+                                <p class="text-sm font-semibold text-white">hafidkhiari18@email.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hafidz-khiari-abdunatsir-b849282a8/" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 transition">
+                            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">LinkedIn</p>
+                                <p class="text-sm font-semibold text-white">Hafidz Khiari Abdunatsir</p>
+                            </div>
+                        </a>
+
+                        <a href="https://whatsapp.com" target="_blank" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/60 border border-slate-700 hover:bg-slate-800 transition">
+                            <div class="w-10 h-10 rounded-lg bg-blue-900 text-white flex items-center justify-center">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">WhatsApp</p>
+                                <p class="text-sm font-semibold text-white">+62 895-2157-7671</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simple Contact Form -->
+                <div class="bg-slate-800 border border-slate-700 p-8 rounded-2xl shadow-xl">
+                    <h4 class="text-xl font-bold mb-6">Kirim Pesan Langsung</h4>
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-blue-500 transition" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Alamat Email</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-blue-500 transition" placeholder="nama@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Pesan</label>
+                            <textarea id="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-blue-500 transition" placeholder="Tuliskan pesan atau penawaran Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition shadow-md">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                    <!-- Notification box -->
+                    <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-900/50 border border-emerald-500/50 text-emerald-200 text-xs text-center">
+                        Terima kasih! Pesan Anda berhasil dikirim. Hafidz Khiari akan segera merespons Anda.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Hafidz Khiari. Hak Cipta Dilindungi.</p>
+            <p>S1 Manajemen / Human Resource Management & Professional</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Handle Form Submission with custom message box instead of alert()
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successBox = document.getElementById('form-success');
+            successBox.classList.remove('hidden');
+            document.getElementById('contact-form').reset();
+            
+            setTimeout(() => {
+                successBox.classList.add('hidden');
+            }, 6000);
+        }
+    </script>
+</body>
+</html>
